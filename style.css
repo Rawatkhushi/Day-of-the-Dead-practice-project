@@ -12,10 +12,36 @@
   align-items: center;
   background-color: transparent;
 }
+
 .navitems {
   display: flex;
   justify-content: space-evenly;
   width: 60%;
   color: white;
   font-family: sans-serif;
+}
+.navitems a {
+  position: relative;
+  padding: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+.navitems a::after {
+  content: "";
+  position: absolute;
+  background-color: #ffc001;
+  height: 2px;
+  width: 0;
+  left: 5px;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navitems a:hover::after {
+  width: 90%;
+}
+
+.blank {
+  height: 200px;
+  background-color: red;
 }
