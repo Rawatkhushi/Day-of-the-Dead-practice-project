@@ -44,6 +44,7 @@
 
 .blank {
   height: 500px;
+  width: 100%;
   /* background-color: red; */
 }
 .intro {
@@ -53,6 +54,7 @@
   background-size: cover;
   display: flex;
   justify-content: center;
+  margin-bottom: 250px;
 }
 .intro span {
   font-size: 20px;
@@ -86,7 +88,7 @@ span h1 {
   margin: 15px;
 }
 .herosec2 {
-  height: 1800px;
+  height: 2000px;
   width: 100%;
   margin-top: 100px;
 }
@@ -114,7 +116,7 @@ span h1 {
 }
 .dedication-to-the-deceased-img {
   margin-top: 120px;
-  margin-left: 40px;
+  margin-left: 80px;
   display: flex;
 }
 .dedication-to-the-deceased-img img {
@@ -139,4 +141,86 @@ span h1 {
 }
 .dedication-to-the-deceased-p3 {
   color: white;
+}
+.dedication-to-the-deceased-img2 {
+  display: flex;
+  align-items: center;
+  margin: 80px;
+}
+.dedication-to-the-deceased-img2 p {
+  color: white;
+  font-size: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 50px;
+  border-left: 3px solid #ffc001;
+}
+.dedication-to-the-deceased-img2 img {
+  height: 650px;
+  width: 1000px;
+}
+
+/*animation cloud*/
+.cloud1 {
+  height: 100px;
+  width: 190px;
+  position: relative;
+  animation-name: cloudmovement1;
+  animation-duration: 29s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.cloud2 {
+  height: 60px;
+  width: 130px;
+  position: relative;
+  animation-name: cloudmovement2;
+  animation-duration: 29s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.cloud3 {
+  height: 80px;
+  width: 150px;
+  position: relative;
+  animation-name: cloudmovement3;
+  animation-duration: 29s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes cloudmovement1 {
+  from {
+    top: 200px;
+    left: 10%;
+  }
+  to {
+    top: 200px;
+    left: 70%;
+  }
+}
+
+@keyframes cloudmovement2 {
+  from {
+    top: 260px;
+    left: 10%;
+  }
+  to {
+    top: 260px;
+    left: 70%;
+  }
+}
+@keyframes cloudmovement3 {
+  from {
+    top: 5px;
+    left: 70%;
+  }
+  to {
+    top: 5px;
+    left: 10%;
+  }
 }
